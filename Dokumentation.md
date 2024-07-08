@@ -101,9 +101,28 @@ docker compose up -d
 
 ![Startseite](PhpMyAdminStartseite.png)
 
-## Monitoring
+## Monitoring Portainer 
 
 #### Für die Verwaltung meiner Docker-Container nutze ich Portainer, eine benutzerfreundliche Web-Oberfläche, die es ermöglicht, Docker-Ressourcen einfach zu überwachen und verwalten. 
+
+### Zuerst habe ich ein Docker Volume für Portainer erstellt, damit die Daten von Portainer persistent gespeichert werden
+
+```bash
+docker volume create portainer_data
+```
+
+### Danach habe ich den Portainer Container mit den Bind-Mounts und den Netzwerk-Ports gestartet
+```bash 
+docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
+
+### Anschliessend habe ich http://localhost:9000 im Browser geöffnet und die EInrichtung abgeschlossen
+
+### Admin Konto erstellt und Local als Docker-Umgebung ausgewählt
+### Danach mit dem admin eingeloggt
+![alt text](portainer.png)
+### Dann wurden mir alle laufenden Container angezeigt
+![alt text](image.png)
 
 
 
