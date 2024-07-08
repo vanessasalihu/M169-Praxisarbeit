@@ -124,9 +124,19 @@ docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.
 ### Dann wurden mir alle laufenden Container angezeigt
 ![alt text](image.png)
 
+### Portainer stellte sich als wertvolle Ergänzung des Projekts heraus, da es eine klare Übersicht über die Container bot und Verwaltungsaufgaben vereinfachte.
+
+## Sicherheit im Container-Umfeld
+
+### Aufgrund des statischen Charakters des Blogs ist eine lokale Kopie der Daten vorhanden, um die Webseite in einer neuen Umgebung wiederherstellen zu können.
 
 
 
 
+## Fazit
+### Dieses Projekt gab mir die Möglichkeit, Docker besser kennenzulernen, eine Technologie, die ich vorher kaum genutzt hatte. Durch die Nutzung von WordPress und MariaDB konnte ich sehen, wie Docker bei der Verwaltung von Anwendungen hilft und die Skalierbarkeit und Effizienz verbessert.
 
+### Eine der größten Herausforderungen war das Überwachen der Docker-Container. Viele Tools waren schwer einzurichten, und die Anleitungen waren oft unklar oder unvollständig. Besonders PRTG war kompliziert und instabil, was frustrierend war. Auch Checkmk entsprach nicht meinen Erwartungen.
+
+### Trotz dieser Schwierigkeiten habe ich festgestellt, dass Docker eine gute Lösung für Tests und die Bereitstellung von Anwendungen ist. Es bietet eine flexible und leistungsfähige Plattform für viele Aufgaben in der Entwicklung und im Betrieb.
 
