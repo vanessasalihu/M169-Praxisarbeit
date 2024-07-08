@@ -81,6 +81,33 @@ volumes:
   mysql: {}
 
   ```
+#### Die Datei definiert zwei Dienste: Wordpress und MariaDB. Sie konfiguriert die Docker-Images, Ports und Umgebungsvariablen für die Verbindung und den Betrieb der beiden Dienste. 
 
-  
+  ### Docker compose Datei ausführen mit folgendem Befehl:
+
+```bash
+docker compose up -d
+```
+![compose ausführen](<compose ausführen.png>)
+
+
+## PhpMyAdmin
+### PhpMyAdmin auf dem Docker-Setup installiert, um die Verwaltung der MySQL-Datenbank zu erleichtern
+![PhpMyAdmin](PhpMyAdmin.png)
+
+### Anschliessend habe ich mich im Browser über den Localhost im PhpMyAdmin angemeldet
+
+![Login](PhpMyAdminLogin1.png)
+
+![Startseite](PhpMyAdminStartseite.png)
+
+## Monitoring
+
+#### Für die Verwaltung meiner Docker-Container nutze ich Portainer, eine benutzerfreundliche Web-Oberfläche, die es ermöglicht, Docker-Ressourcen einfach zu überwachen und verwalten. 
+
+
+
+
+
+
 
