@@ -130,6 +130,8 @@ docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.
 
 ### Aufgrund des statischen Charakters des Blogs ist eine lokale Kopie der Daten vorhanden, um die Webseite in einer neuen Umgebung wiederherstellen zu können.
 
+## Fertige Wordpress Seite
+![alt text](image-1.png)
 
 
 
